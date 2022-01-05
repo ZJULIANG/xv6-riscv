@@ -14,7 +14,6 @@ void prime(int *p0)
     int subpid = 0;
     read(*p0, &base, INT_LEN);
     printf("prime %d\n", base);
-    if(base==MAX_NUM) return;
     while(0 != read(*p0, &num, INT_LEN)){
         if(num % base != 0){
             if(subpid == 0){
